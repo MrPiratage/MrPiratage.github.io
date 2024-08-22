@@ -3,24 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Audio Visualizer</title>
+  <title>Mood Tracker</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1>Audio Visualizer</h1>
-      <p>Enter a link to visualize the audio.</p>
-    </header>
-    <main>
-      <input type="text" id="audio-url" placeholder="Enter audio URL here">
-      <button id="load-audio">Visualize</button>
-      <canvas id="visualization"></canvas>
-    </main>
-    <footer>
-      <p>Powered by <a href="https://github.com/your-repo" target="_blank">MrPiratage's Github Repo</a></p>
-    </footer>
+    <h1>Average Mood Today</h1>
+    <div id="moodDisplay">
+      <img id="moodImage" src="images/neutral.png" alt="Mood Image">
+      <p id="moodText">Average Mood: Meh</p>
+    </div>
+    <button onclick="location.href='log.html'">Log Your Mood</button>
   </div>
-  <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
