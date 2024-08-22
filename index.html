@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><center>Audio Visualizer</center></title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Audio Visualizer</h1>
-    <input type="text" id="audio-url" placeholder="Enter audio URL">
-    <button id="load-audio">Load and Visualize</button>
-    <button id="stop-audio">Stop</button>
-    <div id="visualization"></div>
-    <script src="script.js"></script>
+  <div class="container">
+    <header>
+      <h1>Audio Visualizer</h1>
+      <p>Enter a link to visualize the audio.</p>
+    </header>
+    <main>
+      <input type="text" id="audio-url" placeholder="Enter audio URL here">
+      <button id="load-audio">Visualize</button>
+      <canvas id="visualization"></canvas>
+    </main>
+    <footer>
+      <p>Powered by <a href="https://github.com/your-repo" target="_blank">Your GitHub Repo</a></p>
+    </footer>
+  </div>
+  <script src="scripts.js"></script>
 </body>
 </html>
